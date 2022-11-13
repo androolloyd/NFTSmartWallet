@@ -1,0 +1,1098 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "status",
+          "type": "bool"
+        }
+      ],
+      "name": "TransferApprovalChanged",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "target",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "callData",
+          "type": "bytes"
+        }
+      ],
+      "name": "execute",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "target",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "callData",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "execute",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "controllerId",
+          "type": "uint256"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "target",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "callData",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "rawExecute",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "execute(address,bytes)": "1cff79cd",
+    "execute(address,bytes,uint256)": "a04a0908",
+    "initialize(uint256)": "fe4b84df",
+    "owner()": "8da5cb5b",
+    "rawExecute(address,bytes,uint256)": "21fe600d"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"status\",\"type\":\"bool\"}],\"name\":\"TransferApprovalChanged\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"target\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"callData\",\"type\":\"bytes\"}],\"name\":\"execute\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"target\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"callData\",\"type\":\"bytes\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"execute\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"controllerId\",\"type\":\"uint256\"}],\"name\":\"initialize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"target\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"callData\",\"type\":\"bytes\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"rawExecute\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"execute(address,bytes)\":{\"details\":\"Makes an arbitrary function call with value to a contract, with provided calldata\",\"params\":{\"callData\":\"Data to pass with the call\",\"target\":\"Address of a contract to call\"}},\"execute(address,bytes,uint256)\":{\"details\":\"Makes an arbitrary function call with value to a contract, with provided calldata and value\",\"params\":{\"callData\":\"Data to pass with the call\",\"target\":\"Address of a contract to call\",\"value\":\"ETH value to pass to the target\"}},\"initialize(uint256)\":{\"details\":\"Initialization function used instead of a constructor,      since the intended creation method is cloning\"},\"owner()\":{\"details\":\"Returns the current owner of the wallet\"},\"rawExecute(address,bytes,uint256)\":{\"params\":{\"callData\":\"Optional data to pass with the call\",\"target\":\"Address of the destination\",\"value\":\"Optional ETH value to pass to the target\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"execute(address,bytes)\":{\"notice\":\"Payable. The passed value will be forwarded to the target.\"},\"execute(address,bytes,uint256)\":{\"notice\":\"Payable. Allows the user to explicitly state the ETH value, in order to,         e.g., pay with the contract's own balance.\"},\"rawExecute(address,bytes,uint256)\":{\"notice\":\"Makes an arbitrary call to an address attaching value and optional calldata using raw .call{value}\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/smart-wallet/interfaces/INFTSmartWallet.sol\":\"INFTSmartWallet\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/solmate/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":solmate/=lib/solmate/src/\"]},\"sources\":{\"src/smart-wallet/interfaces/INFTSmartWallet.sol\":{\"keccak256\":\"0x54137a7f6ceb3a064158f467a72b05d12b70e6c59160d39383760ba07ba39d65\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1616f416f2a0328bdc97a65b2ebb63b17f2904c8064ac3badff0f67b715a6b0b\",\"dweb:/ipfs/QmertmCVF3kfsBc6XycVBnNDEEb1BZnGqYfkziLJYpNszu\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "from",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "to",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "bool",
+              "name": "status",
+              "type": "bool",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "TransferApprovalChanged",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "target",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "callData",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "execute",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "target",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "callData",
+              "type": "bytes"
+            },
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "execute",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "controllerId",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "initialize"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "owner",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "target",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "callData",
+              "type": "bytes"
+            },
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "rawExecute",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "execute(address,bytes)": {
+            "details": "Makes an arbitrary function call with value to a contract, with provided calldata",
+            "params": {
+              "callData": "Data to pass with the call",
+              "target": "Address of a contract to call"
+            }
+          },
+          "execute(address,bytes,uint256)": {
+            "details": "Makes an arbitrary function call with value to a contract, with provided calldata and value",
+            "params": {
+              "callData": "Data to pass with the call",
+              "target": "Address of a contract to call",
+              "value": "ETH value to pass to the target"
+            }
+          },
+          "initialize(uint256)": {
+            "details": "Initialization function used instead of a constructor,      since the intended creation method is cloning"
+          },
+          "owner()": {
+            "details": "Returns the current owner of the wallet"
+          },
+          "rawExecute(address,bytes,uint256)": {
+            "params": {
+              "callData": "Optional data to pass with the call",
+              "target": "Address of the destination",
+              "value": "Optional ETH value to pass to the target"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "execute(address,bytes)": {
+            "notice": "Payable. The passed value will be forwarded to the target."
+          },
+          "execute(address,bytes,uint256)": {
+            "notice": "Payable. Allows the user to explicitly state the ETH value, in order to,         e.g., pay with the contract's own balance."
+          },
+          "rawExecute(address,bytes,uint256)": {
+            "notice": "Makes an arbitrary call to an address attaching value and optional calldata using raw .call{value}"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":ds-test/=lib/solmate/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":solmate/=lib/solmate/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/smart-wallet/interfaces/INFTSmartWallet.sol": "INFTSmartWallet"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/smart-wallet/interfaces/INFTSmartWallet.sol": {
+        "keccak256": "0x54137a7f6ceb3a064158f467a72b05d12b70e6c59160d39383760ba07ba39d65",
+        "urls": [
+          "bzz-raw://1616f416f2a0328bdc97a65b2ebb63b17f2904c8064ac3badff0f67b715a6b0b",
+          "dweb:/ipfs/QmertmCVF3kfsBc6XycVBnNDEEb1BZnGqYfkziLJYpNszu"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/smart-wallet/interfaces/INFTSmartWallet.sol",
+    "id": 25775,
+    "exportedSymbols": {
+      "INFTSmartWallet": [
+        25774
+      ],
+      "INFTSmartWalletEvents": [
+        25725
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:1806:19",
+    "nodes": [
+      {
+        "id": 25716,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:19",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".10"
+        ]
+      },
+      {
+        "id": 25725,
+        "nodeType": "ContractDefinition",
+        "src": "58:125:19",
+        "nodes": [
+          {
+            "id": 25724,
+            "nodeType": "EventDefinition",
+            "src": "96:85:19",
+            "nodes": [],
+            "anonymous": false,
+            "eventSelector": "735470c0119e2cb4680d81da708df79b6ffdaf5c907d59e58265a8710fb42b6f",
+            "name": "TransferApprovalChanged",
+            "nameLocation": "102:23:19",
+            "parameters": {
+              "id": 25723,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 25718,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "from",
+                  "nameLocation": "142:4:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25724,
+                  "src": "126:20:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 25717,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "126:7:19",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 25720,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nameLocation": "164:2:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25724,
+                  "src": "148:18:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 25719,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "148:7:19",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 25722,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "status",
+                  "nameLocation": "173:6:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25724,
+                  "src": "168:11:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 25721,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "168:4:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "125:55:19"
+            }
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "INFTSmartWalletEvents",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          25725
+        ],
+        "name": "INFTSmartWalletEvents",
+        "nameLocation": "68:21:19",
+        "scope": 25775,
+        "usedErrors": []
+      },
+      {
+        "id": 25774,
+        "nodeType": "ContractDefinition",
+        "src": "185:1652:19",
+        "nodes": [
+          {
+            "id": 25733,
+            "nodeType": "FunctionDefinition",
+            "src": "369:51:19",
+            "nodes": [],
+            "documentation": {
+              "id": 25728,
+              "nodeType": "StructuredDocumentation",
+              "src": "242:122:19",
+              "text": "@dev Initialization function used instead of a constructor,\n      since the intended creation method is cloning"
+            },
+            "functionSelector": "fe4b84df",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "initialize",
+            "nameLocation": "378:10:19",
+            "parameters": {
+              "id": 25731,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 25730,
+                  "mutability": "mutable",
+                  "name": "controllerId",
+                  "nameLocation": "397:12:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25733,
+                  "src": "389:20:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 25729,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "389:7:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "388:22:19"
+            },
+            "returnParameters": {
+              "id": 25732,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "419:0:19"
+            },
+            "scope": 25774,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 25743,
+            "nodeType": "FunctionDefinition",
+            "src": "699:96:19",
+            "nodes": [],
+            "documentation": {
+              "id": 25734,
+              "nodeType": "StructuredDocumentation",
+              "src": "426:268:19",
+              "text": "@dev Makes an arbitrary function call with value to a contract, with provided calldata\n @param target Address of a contract to call\n @param callData Data to pass with the call\n @notice Payable. The passed value will be forwarded to the target."
+            },
+            "functionSelector": "1cff79cd",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "execute",
+            "nameLocation": "708:7:19",
+            "parameters": {
+              "id": 25739,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 25736,
+                  "mutability": "mutable",
+                  "name": "target",
+                  "nameLocation": "724:6:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25743,
+                  "src": "716:14:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 25735,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "716:7:19",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 25738,
+                  "mutability": "mutable",
+                  "name": "callData",
+                  "nameLocation": "745:8:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25743,
+                  "src": "732:21:19",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 25737,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "732:5:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "715:39:19"
+            },
+            "returnParameters": {
+              "id": 25742,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 25741,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25743,
+                  "src": "781:12:19",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 25740,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "781:5:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "780:14:19"
+            },
+            "scope": 25774,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 25755,
+            "nodeType": "FunctionDefinition",
+            "src": "1210:111:19",
+            "nodes": [],
+            "documentation": {
+              "id": 25744,
+              "nodeType": "StructuredDocumentation",
+              "src": "801:404:19",
+              "text": "@dev Makes an arbitrary function call with value to a contract, with provided calldata and value\n @param target Address of a contract to call\n @param callData Data to pass with the call\n @param value ETH value to pass to the target\n @notice Payable. Allows the user to explicitly state the ETH value, in order to,\n         e.g., pay with the contract's own balance."
+            },
+            "functionSelector": "a04a0908",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "execute",
+            "nameLocation": "1219:7:19",
+            "parameters": {
+              "id": 25751,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 25746,
+                  "mutability": "mutable",
+                  "name": "target",
+                  "nameLocation": "1235:6:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25755,
+                  "src": "1227:14:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 25745,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1227:7:19",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 25748,
+                  "mutability": "mutable",
+                  "name": "callData",
+                  "nameLocation": "1256:8:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25755,
+                  "src": "1243:21:19",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 25747,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1243:5:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 25750,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "1274:5:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25755,
+                  "src": "1266:13:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 25749,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1266:7:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1226:54:19"
+            },
+            "returnParameters": {
+              "id": 25754,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 25753,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25755,
+                  "src": "1307:12:19",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 25752,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1307:5:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1306:14:19"
+            },
+            "scope": 25774,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 25767,
+            "nodeType": "FunctionDefinition",
+            "src": "1613:114:19",
+            "nodes": [],
+            "documentation": {
+              "id": 25756,
+              "nodeType": "StructuredDocumentation",
+              "src": "1327:281:19",
+              "text": "@notice Makes an arbitrary call to an address attaching value and optional calldata using raw .call{value}\n @param target Address of the destination\n @param callData Optional data to pass with the call\n @param value Optional ETH value to pass to the target"
+            },
+            "functionSelector": "21fe600d",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "rawExecute",
+            "nameLocation": "1622:10:19",
+            "parameters": {
+              "id": 25763,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 25758,
+                  "mutability": "mutable",
+                  "name": "target",
+                  "nameLocation": "1641:6:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25767,
+                  "src": "1633:14:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 25757,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1633:7:19",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 25760,
+                  "mutability": "mutable",
+                  "name": "callData",
+                  "nameLocation": "1662:8:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25767,
+                  "src": "1649:21:19",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 25759,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1649:5:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 25762,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "1680:5:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25767,
+                  "src": "1672:13:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 25761,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1672:7:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1632:54:19"
+            },
+            "returnParameters": {
+              "id": 25766,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 25765,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25767,
+                  "src": "1713:12:19",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 25764,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1713:5:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1712:14:19"
+            },
+            "scope": 25774,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 25773,
+            "nodeType": "FunctionDefinition",
+            "src": "1786:49:19",
+            "nodes": [],
+            "documentation": {
+              "id": 25768,
+              "nodeType": "StructuredDocumentation",
+              "src": "1733:48:19",
+              "text": "@dev Returns the current owner of the wallet"
+            },
+            "functionSelector": "8da5cb5b",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "owner",
+            "nameLocation": "1795:5:19",
+            "parameters": {
+              "id": 25769,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1800:2:19"
+            },
+            "returnParameters": {
+              "id": 25772,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 25771,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25773,
+                  "src": "1826:7:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 25770,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1826:7:19",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1825:9:19"
+            },
+            "scope": 25774,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 25726,
+              "name": "INFTSmartWalletEvents",
+              "nameLocations": [
+                "214:21:19"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 25725,
+              "src": "214:21:19"
+            },
+            "id": 25727,
+            "nodeType": "InheritanceSpecifier",
+            "src": "214:21:19"
+          }
+        ],
+        "canonicalName": "INFTSmartWallet",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          25774,
+          25725
+        ],
+        "name": "INFTSmartWallet",
+        "nameLocation": "195:15:19",
+        "scope": 25775,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 19
+}
